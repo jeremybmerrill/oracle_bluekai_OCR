@@ -1,0 +1,5 @@
+*.csv
+*.json
+training_data.zip
+training_data/
+imgs/
