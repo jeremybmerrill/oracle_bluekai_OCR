@@ -18,3 +18,5 @@ Then run `to_csv.rb path_to_my.json` again. This'll generate a CSV version of th
 I hand-transcribed about 250 pngs. (In training data. I got some help from Tesseract, whose output sucks and is in the gt.txt files in imgs.)
 
 Then trained a Ocropy model with `ocropus-rtrain --load en-default.pyrnn.gz -o oracle-data-ocr-model -N 160000 ../oracle_data_cloud/training_data/*.png` It took about a day to get to 160,000 lines. It defaults to doing a million and I didn't want my computer to spend a week or more training the model.
+
+Get en-default.pyrnn.gz from  https://github.com/tmbdev/ocropy/wiki/Models
